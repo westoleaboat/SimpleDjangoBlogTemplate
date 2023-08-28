@@ -1,7 +1,8 @@
 # SimpleDjangoBlogTemplate
 simple template for a blog in Django (w/no styling)
 
-![Screenshot_select-area_20230824181957](https://github.com/westoleaboat/SimpleDjangoBlogTemplate/assets/68698872/6e7e8c62-5fea-41cd-bbe4-f002c6571731)
+![Screenshot_select-area_20230829002006](https://github.com/westoleaboat/SimpleDjangoBlogTemplate/assets/68698872/a2de13a1-9289-402f-b33b-235b05ed9cd0)
+
 
 
 ## To Test Locally
