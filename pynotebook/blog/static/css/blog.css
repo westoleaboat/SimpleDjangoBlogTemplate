@@ -11,3 +11,71 @@
     width:60%;
     padding:0 0 0 30px; 
 }
+
+#posts {
+    /* background-color: firebrick; */
+}
+
+#single-post {
+    gap: 2rem;
+    /* background-color: royalblue; */
+}
+
+pre {
+    background-color: grey;
+    color: white;
+    padding: 0.2rem;
+    border-radius: 5px;
+}
+code {
+    background-color: gray;
+    color: white;
+    padding: 0.2rem;
+    border-radius: 5px;
+}
+
+blockquote {
+    border-left: 5px solid lightgray;
+    padding-left: 0.5rem;
+}
+
+/* Apply styling to the entire table */
+table {
+    width: 100%; /* Make the table fill its container */
+    border-collapse: collapse; /* Merge table borders */
+    font-family: Arial, sans-serif; /* Choose a font */
+}
+
+/* Style table headers */
+thead {
+    background-color: #f2f2f2; /* Header background color */
+    text-align: left; /* Text alignment */
+    padding: 10px; /* Padding around header content */
+    border-bottom: 2px solid #ddd; /* Bottom border */
+}
+
+/* Style table data cells */
+tbody {
+    padding: 8px; /* Padding around cell content */
+    text-align: left; /* Text alignment */
+    border-bottom: 1px solid #ddd; /* Bottom border */
+}
+
+/* Style even rows */
+tr:nth-child(even) {
+    background-color: #f5f5f5; /* Background color for even rows */
+}
+
+/* Style odd rows */
+/* tr:nth-child(odd) {
+    background-color: #ffffff;
+} */
+
+/* Add hover effect to table rows */
+tr:hover {
+    background-color: #f5f5f5; /* Background color on hover */
+}
+
+/* tr:nth-child(even):hover {
+    background-color: #dddddd;
+} */
