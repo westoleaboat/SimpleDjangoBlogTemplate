@@ -21,4 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # blog application URLs
     path('blog/', include('blog.urls', namespace='blog')),
+    # markdown url
+    path('markdownx/', include('markdownx.urls')),
 ]

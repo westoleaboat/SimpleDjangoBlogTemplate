@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -40,6 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # My Apps.
     'blog.apps.BlogConfig',
+    'taggit',
+    # 'markdown_deux',
+    'markdownx',
+    # 'markdownify',
 ]
 
 MIDDLEWARE = [
@@ -120,7 +125,33 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# markdown config
+MARKDOWNX_IMAGE_MAX_SIZE = {
+    'size': (500, 500),
+    'quality': 90
+}
+
+MARKDOWNX_MARKDOWN_EXTENSIONS = [
+    # 'markdown.extensions.extra',
+    'fenced_code', 
+    'codehilite', 
+    'tables',
+
+]
+
+# MARKDOWN_DEUX_STYLES = {
+#     "default": {
+#         "extras": {
+#             "code-friendly": None,
+#         },
+#         "safe_mode": "escape",
+#     },
+# }
