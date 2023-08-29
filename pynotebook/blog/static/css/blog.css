@@ -24,7 +24,7 @@ body {
     flex-direction: column;
     float:right;
     width:30%;
-    padding:0.5rem;
+    padding:1rem;
     background: var(--neutral-light); 
     height:100%;
     border-radius: 10px;
@@ -151,3 +151,32 @@ tr:hover {
 /* tr:nth-child(even):hover {
     background-color: #dddddd;
 } */
+
+.plotly-graph {
+    /* background-color: red; */
+}
+
+#sidebar > #tags {
+    line-height: 2.5rem;
+
+}
+
+#sidebar > #tags > a {
+    text-decoration: none;
+    text-decoration: none;
+    background-color: purple;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+#sidebar > .hn-articles > ul > li > a {
+    text-decoration: none;
+    color: var(--primary-color);
+
+}
+
+#sidebar > .hn-articles > ul > li > p {
+    margin-top: 0;
+}
+
