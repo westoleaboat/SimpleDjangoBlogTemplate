@@ -74,7 +74,7 @@ def generate_visual():
             "type": "bar",
             "x": [
                 "<a href='https://github.com/public-apis/public-apis'>public-apis</a>",
-                "<a href='https://github.com/vinta/awesome-python'>awesome-python</a>",
+                "<a href='https://github.com/vinta/awesome-python'>awesome-pyth...</a>",
                 "<a href='https://github.com/pallets/flask'>flask</a>",
                 "<a href='https://github.com/tiangolo/fastapi'>fastapi</a>",
                 "<a href='https://github.com/langchain-ai/langchain'>langchain</a>",
@@ -104,7 +104,7 @@ def generate_visual():
                 "langchain-ai<br />⚡ Building applications with LLMs through composability ⚡",
                 "josephmisiti<br />A curated list of awesome Machine Learning frameworks, libraries and software.",
                 "keras-team<br />Deep Learning for humans",
-                "bregman-arie<br />Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic, Network, Virtualization. DevOps Interview Questions",
+                "bregman-arie<br />Linux, Jenkins, AWS, SRE, Prometheus, Docker, Python, Ansible, Git, Kubernetes<br>, Terraform, OpenStack, SQL, NoSQL, Azure, GCP, DNS, Elastic,<br> Network, Virtualization. DevOps Interview Questions",
                 "scikit-learn<br />scikit-learn: machine learning in Python",
                 "python<br />The Python programming language"
             ],
