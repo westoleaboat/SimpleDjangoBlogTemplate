@@ -78,7 +78,7 @@ def generate_visual():
                 "<a href='https://github.com/pallets/flask'>flask</a>",
                 "<a href='https://github.com/tiangolo/fastapi'>fastapi</a>",
                 "<a href='https://github.com/langchain-ai/langchain'>langchain</a>",
-                "<a href='https://github.com/josephmisiti/awesome-machine-learning'>awesome-machine-learning</a>",
+                "<a href='https://github.com/josephmisiti/awesome-machine-learning'>awesome-machi...</a>",
                 "<a href='https://github.com/keras-team/keras'>keras</a>",
                 "<a href='https://github.com/bregman-arie/devops-exercises'>devops-exercises</a>",
                 "<a href='https://github.com/scikit-learn/scikit-learn'>scikit-learn</a>",
@@ -142,9 +142,12 @@ def generate_visual():
             }
         }
     }
-}
+    }
 
-      # Make visualization.
+     # Shortened labels for the x-axis
+    # short_x_labels = [label.split('>')[1].split('<')[0][:5] for label in data["data"][0]["x"]]
+
+    # Make visualization.
     data = [{
     'type': 'bar',
     'x': data["data"][0]["x"],
@@ -158,26 +161,35 @@ def generate_visual():
     'opacity': 0.6,
     }]
 
+   
+
     my_layout = {
-        'margin': {
-            'l':0,
-            'r':0,
-        },
+    'margin': {
+        'l':5,
+        'r':5,
+    },
     'title': 'Most-Starred Python Projects on GitHub',
     'titlefont': {'size': 20},
     'xaxis': {
     # 'title': 'Repository',
     'titlefont': {'size': 24},
     'tickfont': {'size': 14},
+    'automargin': True,
+    'tickangle': 90,
+    # 'ticktext':short_x_labels,
     },
     'yaxis': {
+    'showticklabels': False,
     # 'title': 'Stars',
-    'titlefont': {'size': 24},
+    # 'titlefont': {'size': 24},
     'tickfont': {'size': 14},
+    'automargin': True,
     },
     #  'xaxis': {'title': 'Repository'},
     #  'yaxis': {'title': 'Stars'},
     }
+
+    
 
     fig2 = {'data': data, 'layout': my_layout}
     
